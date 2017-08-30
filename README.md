@@ -8,4 +8,4 @@ To start with:
 - npm start
 - localhost:7733
 
-![alt text](https://image.ibb.co/bLwuGk/list_app.png)
+![alt text](https://image.ibb.co/czN6U5/list_app.png)
