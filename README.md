@@ -7,3 +7,5 @@ To start with:
 - npm install
 - npm start
 - localhost:7733
+
+![alt text](https://image.ibb.co/bLwuGk/list_app.png)
