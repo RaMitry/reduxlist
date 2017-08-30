@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,500);
+
+$montserrat: 'Montserrat', serif;
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  -moz-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+.app-container {
+  padding-top: 10px;
+}
+
+.app-container h2 {
+  font-family: $montserrat;
+  font-weight: 500;
+}
+
+.todo-container {
+  *,
+  *:after,
+  *:before {
+    @include box-sizing(border-box);
+  }
+  padding: 10px 20px;
+}
+
+a {
+  color: black;
+}
+
+.form-input-group {
+  display: inline-table !important;
+  vertical-align: middle !important;
+}
+
+.todo-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.add-form {
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.input_add {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-right: none;
+  margin: 0;
+}
+
+.btn-simple {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border-radius: 4px;
+  &:hover {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+  }
+  &:active {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+  }
+}
+
+.btn-input-group {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.todo-block {
+  width: 400px;
+}
+
+.todo-item {
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  padding: 8px 10px;
+}
+
+ul li.todo-item:last-child {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.content-span {
+  margin-left: 15px;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.toggle-status {
+  cursor: pointer;
+}
+
+.link-button-icon {
+  margin-left: 10px;
+}
+
+.delete-button, .edit-button {
+  text-align: right;
+  float: right;
+}
